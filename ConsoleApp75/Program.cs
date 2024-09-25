@@ -12,7 +12,6 @@ namespace ConsoleApp75
         void Add(T t);
         void Update(T t, int id);
         void Delete(int id);
-
         List<T> GetAll();
         T GetById(int id);
     }
@@ -53,7 +52,6 @@ namespace ConsoleApp75
         {
             using (SqlConnection conn = new SqlConnection(CONNECTION_STRING))
             {
-
                 conn.Open();
 
                 using (SqlCommand command = new SqlCommand())
@@ -127,6 +125,7 @@ namespace ConsoleApp75
             {
                 con.Open();
                 Direction direction = new Direction();
+
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = con;
@@ -153,7 +152,6 @@ namespace ConsoleApp75
 
     public class CarType : IRepository<CarType>
     {
-
         public int Id { get; set; }
         public string Model { get; set; }
         public decimal Price { get; set; }
@@ -180,7 +178,6 @@ namespace ConsoleApp75
                     command.ExecuteNonQuery();
                 }
             }
-
         }
 
         public void Delete(int id)
@@ -193,7 +190,6 @@ namespace ConsoleApp75
                 {
                     command.Connection = con;
                     command.CommandText = "Delete from CarType where id = @Id";
-
                     command.Parameters.Add(new SqlParameter("id", id));
 
                     command.ExecuteNonQuery();
@@ -279,8 +275,6 @@ namespace ConsoleApp75
 
     public class Container : IRepository<Container>
     {
-
-
         public int Id { get; set; }
         public float Coef { get; set; }
         public bool IsClosed { get; set; }
@@ -320,7 +314,6 @@ namespace ConsoleApp75
 
                     cmd.ExecuteNonQuery();
                 }
-
             }
         }
 
@@ -348,9 +341,7 @@ namespace ConsoleApp75
 
                             container.Add(container1);
                         }
-
                     }
-
                 }
                 return container;
             }
@@ -378,9 +369,7 @@ namespace ConsoleApp75
                             container.IsClosed = reader["@IsClosed"].ToString().Equals("true");
 
                         }
-
                     }
-
                 }
                 return container;
             }
@@ -404,20 +393,14 @@ namespace ConsoleApp75
                     com.ExecuteNonQuery();
                 }
             }
-
-
         }
     }
 
     public class Crashed : IRepository<Crashed>
     {
-
-
         public int Id { get; set; }
         public bool IsCrashed { get; set; }
-
         public float Coef { get; set; }
-
         public const string CONNECTION_STRING = "Data Source=.;Initial Catalog = CarsDb; Integrated Security = True; Encrypt=False";
 
         public void Add(Crashed crashed)
@@ -450,7 +433,6 @@ namespace ConsoleApp75
                 {
                     cmd.Connection = con;
                     cmd.CommandText = "Delete from Crashed where id = @Id";
-
                     cmd.Parameters.Add(new SqlParameter("@Id", id));
 
                     cmd.ExecuteNonQuery();
@@ -480,10 +462,8 @@ namespace ConsoleApp75
                             crashed.IsCrashed = reader["@IsCrashed"].ToString().Equals("true");
 
                             crasheds.Add(crashed);
-
                         }
                     }
-;
                 }
                 return crasheds;
             }
@@ -507,11 +487,8 @@ namespace ConsoleApp75
                             crashed1.Coef = float.Parse(reader["@Coef"].ToString());
                             crashed1.Id = int.Parse(reader["@Id"].ToString());
                             crashed1.IsCrashed = reader["@IsCrashed"].ToString().Equals("true");
-
-
                         }
                     }
-;
                 }
                 return crashed1;
             }
@@ -526,7 +503,6 @@ namespace ConsoleApp75
                 {
                     cmd.Connection = connection;
                     cmd.CommandText = "Update Crashed set Id = @Id,Coef = @Coef,IsCrashed = @IsCrashed where id = @Id ";
-
                     cmd.Parameters.Add(new SqlParameter("@Id", crashed.Id));
                     cmd.Parameters.Add(new SqlParameter("@IsCrashed", crashed.IsCrashed));
                     cmd.Parameters.Add(new SqlParameter("@Coef", crashed.Coef));
