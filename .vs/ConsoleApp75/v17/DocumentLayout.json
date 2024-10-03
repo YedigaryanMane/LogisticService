@@ -3,44 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\calculationresult\\calculationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\calculationresult\\calculationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|c:\\users\\user\\source\\repos\\consoleapp75\\consoleapp75\\result\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\result\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|c:\\users\\user\\source\\repos\\consoleapp75\\consoleapp75\\calculationresult\\calculationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\calculationresult\\calculationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\newfolder1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\newfolder1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|c:\\users\\user\\source\\repos\\consoleapp75\\consoleapp75\\manues\\adminmanu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\manues\\adminmanu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\repositories\\cartyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\repositories\\cartyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\repositories\\directionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\repositories\\directionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\ConsoleApp75.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\ConsoleApp75.csproj|solutionrelative:consoleapp75\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\repositories\\containerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\repositories\\containerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\newfolder2\\containeranswerquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\newfolder2\\containeranswerquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\models\\container.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\models\\container.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\models\\crashed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\models\\crashed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\repositories\\crashedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\repositories\\crashedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\repositories\\containerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\repositories\\containerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\repositories\\directionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\repositories\\directionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\ConsoleApp75.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\repositories\\containerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\newfolder3\\crashedanswerquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\newfolder3\\crashedanswerquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\newfolder2\\containeranswerquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\newfolder2\\containeranswerquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\models\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,10 +79,6 @@
       "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\ConsoleApp75.csproj|solutionrelative:consoleapp75\\repositories\\cartyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\ConsoleApp75.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\ConsoleApp75.csproj|solutionrelative:consoleapp75\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\ConsoleApp75.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\repositories\\directionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\ConsoleApp75.csproj|solutionrelative:consoleapp75\\repositories\\directionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -83,20 +91,8 @@
       "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\models\\cartype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\models\\container.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\models\\container.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\ConsoleApp75.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\repositories\\crashedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\ConsoleApp75.csproj|solutionrelative:consoleapp75\\repositories\\crashedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|C:\\Users\\user\\source\\repos\\ConsoleApp75\\consoleapp75\\models\\crashed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D68B7EA-4043-42CE-A1DC-A21AF565C521}|ConsoleApp75\\LogisticService.csproj|solutionrelative:consoleapp75\\models\\crashed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -110,80 +106,27 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Result.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Result\\Result.cs",
-              "RelativeDocumentMoniker": "ConsoleApp75\\Result\\Result.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Result\\Result.cs*",
-              "RelativeToolTip": "ConsoleApp75\\Result\\Result.cs*",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBwAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T10:57:55.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CrashedRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\CrashedRepository.cs",
-              "RelativeDocumentMoniker": "ConsoleApp75\\Repositories\\CrashedRepository.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\CrashedRepository.cs",
-              "RelativeToolTip": "ConsoleApp75\\Repositories\\CrashedRepository.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAkwHMAAABnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T12:50:31.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "DirectionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\DirectionRepository.cs",
-              "RelativeDocumentMoniker": "ConsoleApp75\\Repositories\\DirectionRepository.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\DirectionRepository.cs",
-              "RelativeToolTip": "ConsoleApp75\\Repositories\\DirectionRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF8AAABIAAAA",
+              "Title": "ContainerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\ContainerRepository.cs",
+              "RelativeDocumentMoniker": "ConsoleApp75\\Repositories\\ContainerRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\ContainerRepository.cs",
+              "RelativeToolTip": "ConsoleApp75\\Repositories\\ContainerRepository.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwCcAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T12:50:44.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T19:38:42.584Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CarTypeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\CarTypeRepository.cs",
-              "RelativeDocumentMoniker": "ConsoleApp75\\Repositories\\CarTypeRepository.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\CarTypeRepository.cs",
-              "RelativeToolTip": "ConsoleApp75\\Repositories\\CarTypeRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAyAAAA",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp75\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Program.cs",
+              "RelativeToolTip": "ConsoleApp75\\Program.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAQwBwAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T10:39:16.22Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PersonRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\PersonRepository.cs",
-              "RelativeDocumentMoniker": "ConsoleApp75\\Repositories\\PersonRepository.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\PersonRepository.cs",
-              "RelativeToolTip": "ConsoleApp75\\Repositories\\PersonRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T18:38:55.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\NewFolder1\\Admin.cs",
-              "RelativeDocumentMoniker": "ConsoleApp75\\NewFolder1\\Admin.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\NewFolder1\\Admin.cs",
-              "RelativeToolTip": "ConsoleApp75\\NewFolder1\\Admin.cs",
-              "ViewState": "AQIAABwBAAAAAAAAAAAQwCkBAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T16:05:27.952Z",
+              "WhenOpened": "2024-10-02T09:55:22.473Z",
               "EditorCaption": ""
             },
             {
@@ -194,53 +137,138 @@
               "RelativeDocumentMoniker": "ConsoleApp75\\User\\User.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\User\\User.cs",
               "RelativeToolTip": "ConsoleApp75\\User\\User.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAYwD8AAAAuAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAGgAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T19:34:15.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Program.cs",
-              "RelativeDocumentMoniker": "ConsoleApp75\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Program.cs*",
-              "RelativeToolTip": "ConsoleApp75\\Program.cs*",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAwDUAAAAAAAAA",
+              "DocumentIndex": 8,
+              "Title": "ContainerAnswerQuestion.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\NewFolder2\\ContainerAnswerQuestion.cs",
+              "RelativeDocumentMoniker": "ConsoleApp75\\NewFolder2\\ContainerAnswerQuestion.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\NewFolder2\\ContainerAnswerQuestion.cs",
+              "RelativeToolTip": "ConsoleApp75\\NewFolder2\\ContainerAnswerQuestion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T09:55:22.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T15:03:34.947Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AdminManu.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Manues\\AdminManu.cs",
+              "RelativeDocumentMoniker": "ConsoleApp75\\Manues\\AdminManu.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Manues\\AdminManu.cs",
+              "RelativeToolTip": "ConsoleApp75\\Manues\\AdminManu.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAmwEYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T16:05:27.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "ConsoleApp75\\Repositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "ConsoleApp75\\Repositories\\IRepository.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAswAgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T15:53:51.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Container.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Models\\Container.cs",
+              "RelativeDocumentMoniker": "ConsoleApp75\\Models\\Container.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Models\\Container.cs",
+              "RelativeToolTip": "ConsoleApp75\\Models\\Container.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T19:59:50.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "CalculationResult.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\CalculationResult\\CalculationResult.cs",
               "RelativeDocumentMoniker": "ConsoleApp75\\CalculationResult\\CalculationResult.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\CalculationResult\\CalculationResult.cs",
               "RelativeToolTip": "ConsoleApp75\\CalculationResult\\CalculationResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAApAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA+wBQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T17:43:24.419Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ContainerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\ContainerRepository.cs",
-              "RelativeDocumentMoniker": "ConsoleApp75\\Repositories\\ContainerRepository.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\ContainerRepository.cs",
-              "RelativeToolTip": "ConsoleApp75\\Repositories\\ContainerRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "CarTypeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\CarTypeRepository.cs",
+              "RelativeDocumentMoniker": "ConsoleApp75\\Repositories\\CarTypeRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\CarTypeRepository.cs",
+              "RelativeToolTip": "ConsoleApp75\\Repositories\\CarTypeRepository.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAqwCIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T19:38:42.584Z",
+              "WhenOpened": "2024-10-02T10:39:16.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Crashed.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Models\\Crashed.cs",
+              "RelativeDocumentMoniker": "ConsoleApp75\\Models\\Crashed.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Models\\Crashed.cs",
+              "RelativeToolTip": "ConsoleApp75\\Models\\Crashed.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T19:59:55.542Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "CrashedRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\CrashedRepository.cs",
+              "RelativeDocumentMoniker": "ConsoleApp75\\Repositories\\CrashedRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\CrashedRepository.cs",
+              "RelativeToolTip": "ConsoleApp75\\Repositories\\CrashedRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAHMAAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T12:50:31.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DirectionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\DirectionRepository.cs",
+              "RelativeDocumentMoniker": "ConsoleApp75\\Repositories\\DirectionRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\DirectionRepository.cs",
+              "RelativeToolTip": "ConsoleApp75\\Repositories\\DirectionRepository.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAgwCMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T12:50:44.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PersonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\PersonRepository.cs",
+              "RelativeDocumentMoniker": "ConsoleApp75\\Repositories\\PersonRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\PersonRepository.cs",
+              "RelativeToolTip": "ConsoleApp75\\Repositories\\PersonRepository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T18:38:55.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "CrashedAnswerQuestion.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\NewFolder3\\CrashedAnswerQuestion.cs",
               "RelativeDocumentMoniker": "ConsoleApp75\\NewFolder3\\CrashedAnswerQuestion.cs",
@@ -248,25 +276,11 @@
               "RelativeToolTip": "ConsoleApp75\\NewFolder3\\CrashedAnswerQuestion.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T15:04:03.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T15:04:03.544Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ContainerAnswerQuestion.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\NewFolder2\\ContainerAnswerQuestion.cs",
-              "RelativeDocumentMoniker": "ConsoleApp75\\NewFolder2\\ContainerAnswerQuestion.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\NewFolder2\\ContainerAnswerQuestion.cs",
-              "RelativeToolTip": "ConsoleApp75\\NewFolder2\\ContainerAnswerQuestion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T15:03:34.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Direction.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Models\\Direction.cs",
               "RelativeDocumentMoniker": "ConsoleApp75\\Models\\Direction.cs",
@@ -274,12 +288,11 @@
               "RelativeToolTip": "ConsoleApp75\\Models\\Direction.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAD4vxIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T18:05:05.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T18:05:05.211Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Models\\Person.cs",
               "RelativeDocumentMoniker": "ConsoleApp75\\Models\\Person.cs",
@@ -287,24 +300,11 @@
               "RelativeToolTip": "ConsoleApp75\\Models\\Person.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T18:29:25.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T18:29:25.832Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Container.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Models\\Container.cs",
-              "RelativeDocumentMoniker": "ConsoleApp75\\Models\\Container.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Models\\Container.cs",
-              "RelativeToolTip": "ConsoleApp75\\Models\\Container.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T19:59:50.296Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "CarType.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Models\\CarType.cs",
               "RelativeDocumentMoniker": "ConsoleApp75\\Models\\CarType.cs",
@@ -316,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "ContainerRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\ContainerRepository.cs",
               "RelativeDocumentMoniker": "ConsoleApp75\\Repositories\\ContainerRepository.cs",
@@ -328,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Direction.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Models\\Direction.cs",
               "RelativeDocumentMoniker": "ConsoleApp75\\Models\\Direction.cs",
@@ -340,31 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\IRepository.cs",
-              "RelativeDocumentMoniker": "ConsoleApp75\\Repositories\\IRepository.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\IRepository.cs",
-              "RelativeToolTip": "ConsoleApp75\\Repositories\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T15:53:51.643Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Crashed.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Models\\Crashed.cs",
-              "RelativeDocumentMoniker": "ConsoleApp75\\Models\\Crashed.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Models\\Crashed.cs",
-              "RelativeToolTip": "ConsoleApp75\\Models\\Crashed.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T19:59:55.542Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "CarTypeRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\CarTypeRepository.cs",
               "RelativeDocumentMoniker": "ConsoleApp75\\Repositories\\CarTypeRepository.cs",
@@ -376,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "DirectionRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\DirectionRepository.cs",
               "RelativeDocumentMoniker": "ConsoleApp75\\Repositories\\DirectionRepository.cs",
@@ -388,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleApp75\\Program.cs",
@@ -400,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "CrashedRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ConsoleApp75\\ConsoleApp75\\Repositories\\CrashedRepository.cs",
               "RelativeDocumentMoniker": "ConsoleApp75\\Repositories\\CrashedRepository.cs",

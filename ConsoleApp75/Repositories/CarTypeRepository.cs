@@ -44,7 +44,7 @@ namespace ConsoleApp75.Repositories
                 {
                     command.Connection = con;
                     command.CommandText = "Delete from CarType where id = @Id";
-                    command.Parameters.Add(new SqlParameter("id", id));
+                    command.Parameters.Add(new SqlParameter("@Id", id));
 
                     command.ExecuteNonQuery();
                 }
