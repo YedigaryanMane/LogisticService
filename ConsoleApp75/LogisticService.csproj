@@ -43,11 +43,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculationResult\CalculationResult.cs" />
+    <Compile Include="Models\CarType.cs" />
+    <Compile Include="Models\Container.cs" />
+    <Compile Include="Models\Crashed.cs" />
+    <Compile Include="Models\Direction.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Manues\AdminManu.cs" />
+    <Compile Include="NewFolder2\ContainerAnswerQuestion.cs" />
+    <Compile Include="NewFolder3\CrashedAnswerQuestion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\CarTypeRepository.cs" />
+    <Compile Include="Repositories\ContainerRepository.cs" />
+    <Compile Include="Repositories\CrashedRepository.cs" />
+    <Compile Include="Repositories\DirectionRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\PersonRepository.cs" />
+    <Compile Include="User\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
