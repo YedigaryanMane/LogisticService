@@ -1,4 +1,4 @@
-﻿using ConsoleApp75.Models;
+﻿using LogisticService.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -7,7 +7,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp75.Repositories
+namespace LogisticService.Repositories
 {
     class PersonRepository : IRepository<Person>
     {

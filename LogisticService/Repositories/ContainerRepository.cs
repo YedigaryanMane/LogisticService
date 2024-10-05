@@ -1,4 +1,5 @@
-﻿using ConsoleApp75.Models;
+﻿using LogisticService.Models;
+using LogisticService.Models.RequestModels;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -6,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp75.Repositories
+namespace LogisticService.Repositories
 {
-    class ContainerRepository : IRepository<Container>
+    public class ContainerRepository : IRepository<Container, ContainerRequest>
     {
         public const string CONNECTION_STRING = "Data Source=.;Initial Catalog = CarsDb; Integrated Security = True; Encrypt=False";
         List<Container> containerList = new List<Container>();
@@ -44,6 +45,33 @@ namespace ConsoleApp75.Repositories
 
                     cmd.ExecuteNonQuery();
                 }
+            }
+        }
+
+        public Container Find(ContainerRequest request)
+        {
+            using (SqlConnection con = new SqlConnection(CONNECTION_STRING))
+            {
+                con.Open();
+                Container container = new Container();
+
+                using (SqlCommand com = new SqlCommand())
+                {
+                    com.Connection = con;
+                    com.CommandText = "Select * from Container where IsClosed = @IsClosed";
+                    com.Parameters.AddWithValue("@IsClosed", request.IsClosed);
+
+                    using (SqlDataReader reader = com.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            container.Id = int.Parse(reader["@Id"].ToString());
+                            container.Coef = float.Parse(reader["@Coef"].ToString());
+                            container.IsClosed = bool.Parse(reader["@IsClosed"].ToString());
+                        }
+                    }
+                }
+                return container;
             }
         }
 

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp75.Models
+namespace LogisticService.Models
 {
-    public class User
+    public class LogisticModel
     {
-        public User(string carType, bool isCrashed, bool isClosed, string from, string to)
+        public LogisticModel(string carType, bool isCrashed, bool isClosed, string from, string to)
         {
             CarType = carType;
             IsCrashed = isCrashed;

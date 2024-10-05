@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using ConsoleApp75.Repositories;
-using ConsoleApp75.Models;
+using LogisticService.Repositories;
+using LogisticService.Models;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp75.Menues
+namespace LogisticService.Menues
 {
     public class UserMenu : Menu
     {

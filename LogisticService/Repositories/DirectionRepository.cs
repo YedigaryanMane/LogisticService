@@ -1,4 +1,4 @@
-﻿using ConsoleApp75.Models;
+﻿using LogisticService.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp75.Repositories
+namespace LogisticService.Repositories
 {
-    class DirectionRepository : IRepository<Direction>
+    public class DirectionRepository : IRepository<Direction>
     {
         public const string CONNECTION_STRING = "Data Source=.;Initial Catalog = CarsDb; Integrated Security = True; Encrypt=False";
         List<Direction> directions = new List<Direction>();
@@ -131,5 +131,10 @@ namespace ConsoleApp75.Repositories
                 return direction;
             }
         }
-    }   
+
+        public Direction Find(Direction t1)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

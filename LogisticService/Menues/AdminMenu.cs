@@ -1,6 +1,6 @@
-﻿using ConsoleApp75.Result;
-using ConsoleApp75.Models;
-using ConsoleApp75.Repositories;
+﻿using LogisticService.Result;
+using LogisticService.Models;
+using LogisticService.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp75.Menues
+namespace LogisticService.Menues
 {
     public abstract class Menu
     {

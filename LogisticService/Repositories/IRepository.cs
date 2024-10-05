@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp75.Repositories
+namespace LogisticService.Repositories
 {
-    public interface IRepository<T>
+    public interface IRepository<TModel, TRequest>
     {
-        void Add(T t);
-        void Update(T t);
+        void Add(TModel t);
+        void Update(TModel t);
         void Delete(int id);
-        List<T> GetAll();
-        T GetById(int id);
-    }   
+        List<TModel> GetAll();
+        TModel GetById(int id);
+        TModel Find(TRequest request);
+    }
 }

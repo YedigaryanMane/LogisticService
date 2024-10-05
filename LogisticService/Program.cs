@@ -1,8 +1,8 @@
-﻿using ConsoleApp75;
-using ConsoleApp75.Result;
-using ConsoleApp75.Menues;
-using ConsoleApp75.Repositories;
-using ConsoleApp75.Models;
+﻿using LogisticService;
+using LogisticService.Result;
+using LogisticService.Menues;
+using LogisticService.Repositories;
+using LogisticService.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -12,7 +12,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp75
+namespace LogisticService
 {
     internal class Program
     {

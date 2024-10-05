@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp75.Models
+namespace LogisticService.Models
 {
     public class Container
     {

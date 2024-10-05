@@ -43,7 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\CalculationModel.cs" />
+    <Compile Include="Models\LogisticModel.cs" />
+    <Compile Include="Models\RequestModels\CarTypeRequest.cs" />
+    <Compile Include="Models\RequestModels\ContainerRequest.cs" />
+    <Compile Include="Models\RequestModels\CrashedRequest.cs" />
+    <Compile Include="Models\RequestModels\DirectionRequest.cs" />
     <Compile Include="Result\CalculationService.cs" />
     <Compile Include="Menues\UserMenu.cs" />
     <Compile Include="Models\CarType.cs" />

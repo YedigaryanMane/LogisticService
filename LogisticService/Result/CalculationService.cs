@@ -1,15 +1,30 @@
 ﻿using ConsoleApp75.Models;
+using LogisticService.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp75.Result
+namespace LogisticService.Result
 {
-   public  class CalculationService
+    public interface ICalculationService
     {
+        float Calculate(CalculationModel calculationModel);
+    }
 
-        public  void Calculate() { }        
+    public class CalculationService : ICalculationService
+    {
+        public float Calculate(CalculationModel calculationModel)
+        {
+            if (calculationModel.Direction.Price != 0)
+            {
+                return (float)calculationModel.Direction.Price * calculationModel.Container.Coef * calculationModel.CarType.Coef * calculationModel.Crashed.Coef;
+            }
+            else
+            {
+                return (float)calculationModel.Direction.Distance * 100 * calculationModel.Container.Coef * calculationModel.CarType.Coef * calculationModel.Crashed.Coef;
+            }
+        }
     }
 }

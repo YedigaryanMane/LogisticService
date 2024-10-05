@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LogisticService.Models
+namespace LogisticService.Models.RequestModels
 {
-    public class Crashed
+    public class CrashedRequest
     {       
-        public int Id { get; set; }
         public bool IsCrashed { get; set; }
-        public float Coef { get; set; }
+
+        public CrashedRequest(bool isCrashed)
+        {
+            IsCrashed = isCrashed;
+        }
     }
 }

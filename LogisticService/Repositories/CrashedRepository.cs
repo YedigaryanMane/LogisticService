@@ -1,4 +1,4 @@
-﻿using ConsoleApp75.Models;
+﻿using LogisticService.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp75.Repositories
+namespace LogisticService.Repositories
 {
-    class CrashedRepository : IRepository<Crashed>
+    public class CrashedRepository : IRepository<Crashed>
     {
 
         public const string CONNECTION_STRING = "Data Source=.;Initial Catalog = CarsDb; Integrated Security = True; Encrypt=False";
@@ -46,6 +46,11 @@ namespace ConsoleApp75.Repositories
                     cmd.ExecuteNonQuery();
                 }
             }
+        }
+
+        public Crashed Find(Crashed t1)
+        {
+            throw new NotImplementedException();
         }
 
         public List<Crashed> GetAll()
@@ -87,7 +92,7 @@ namespace ConsoleApp75.Repositories
                 {
                     cmd.Connection = connection;
                     cmd.CommandText = "select * from mCrashed where id = @Id";
-                    cmd.Parameters.Add(new SqlParameter("@Id",id));
+                    cmd.Parameters.Add(new SqlParameter("@Id", id));
 
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {

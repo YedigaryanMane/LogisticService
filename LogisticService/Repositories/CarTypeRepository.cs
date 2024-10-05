@@ -1,4 +1,4 @@
-﻿using ConsoleApp75.Models;
+﻿using LogisticService.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -6,11 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp75.Repositories
+namespace LogisticService.Repositories
 {
-    class CarTypeRepository : IRepository<CarType>
+    public class CarTypeRepository : IRepository<CarType>
     {
-
         public const string CONNECTION_STRING = "Data Source=.;Initial Catalog = CarsDb; Integrated Security = True; Encrypt=False";
         List<CarType> carTypes = new List<CarType>();
 
@@ -50,6 +49,11 @@ namespace ConsoleApp75.Repositories
             }
         }
 
+        public CarType Find<TRequest>(TRequest request)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<CarType> GetAll()
         {
             using (SqlConnection connection = new SqlConnection(CONNECTION_STRING))
@@ -69,7 +73,6 @@ namespace ConsoleApp75.Repositories
                             CarType car = new CarType();
                             car.Id = int.Parse(reader["@Id"].ToString());
                             car.Model = reader["@Model"].ToString();
-                            car.Price = decimal.Parse(reader["@Price"].ToString());
                             car.Coef = float.Parse(reader["@Coef"].ToString());
                             cars.Add(car);
                         }
@@ -96,7 +99,6 @@ namespace ConsoleApp75.Repositories
                         {
                             car.Id = int.Parse(reader["@Id"].ToString());
                             car.Model = reader["@Model"].ToString();
-                            car.Price = decimal.Parse(reader["@Price"].ToString());
                             car.Coef = float.Parse(reader["@Coef"].ToString());
                         }
                     }
@@ -117,7 +119,6 @@ namespace ConsoleApp75.Repositories
                     cmd.CommandText = "Update CarType set Id = @Id, Model = @Model,Price = @Price,Coef = @Coef";
                     cmd.Parameters.Add(new SqlParameter("@Id", carType.Id));
                     cmd.Parameters.Add(new SqlParameter("@Model", carType.Model));
-                    cmd.Parameters.Add(new SqlParameter("@Price", carType.Price));
                     cmd.Parameters.Add(new SqlParameter("@Coef", carType.Coef));
 
                     cmd.ExecuteNonQuery();
