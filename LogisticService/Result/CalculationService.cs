@@ -1,0 +1,15 @@
+﻿using ConsoleApp75.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp75.Result
+{
+   public  class CalculationService
+    {
+
+        public  void Calculate() { }        
+    }
+}
