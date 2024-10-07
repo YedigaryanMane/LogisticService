@@ -1,6 +1,7 @@
 ﻿using LogisticService.Result;
 using LogisticService.Models;
 using LogisticService.Repositories;
+using LogisticService.Models.RequestModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -61,7 +62,7 @@ namespace LogisticService.Menues
             }
         }
 
-        private void ShowContainerAdminMenu(IRepository<Container> containerRepository)
+        private void ShowContainerAdminMenu(IRepository<Container,ContainerRequest> containerRepository)
         {
             Console.WriteLine("Wich method do you want to use?");
             Console.WriteLine("1.Add || 2.Delete || 3.Update || 4.GetById || 5.GetAll");
@@ -117,7 +118,7 @@ namespace LogisticService.Menues
             }
         }
 
-        private void ShowDirectionAdminMenu(IRepository<Direction> directionRepository)
+        private void ShowDirectionAdminMenu(IRepository<Direction,DirectionRequest> directionRepository)
         {
             Console.WriteLine("Wich method do you want to use?");
             Console.WriteLine("1.Add || 2.Delete || 3.Update || 4.GetById || 5.GetAll");
@@ -126,13 +127,13 @@ namespace LogisticService.Menues
 
             switch (option)
             {
-                case 1:
-                    Console.WriteLine("Input to: ");
-                    string to = Console.ReadLine();
-                    direction.To = to;
+                case 1:                    
                     Console.WriteLine("Input from: ");
                     string from = Console.ReadLine();
                     direction.From = from;
+                    Console.WriteLine("Input to: ");
+                    string to = Console.ReadLine();
+                    direction.To = to;
                     Console.WriteLine("Input price: ");
                     decimal price = decimal.Parse(Console.ReadLine());
                     direction.Price = price;
@@ -185,7 +186,7 @@ namespace LogisticService.Menues
             }
         }
 
-        private void ShowCarTypeAdminMenu(IRepository<CarType> carTypeRepository)
+        private void ShowCarTypeAdminMenu(IRepository<CarType,CarTypeRequest> carTypeRepository)
         {
             Console.WriteLine("Wich method do you want to use?");
             Console.WriteLine("1.Add || 2.Delete || 3.Update || 4.GetById || 5.GetAll");
@@ -198,9 +199,6 @@ namespace LogisticService.Menues
                     Console.WriteLine("Input model: ");
                     string model = Console.ReadLine();
                     carType.Model = model;
-                    Console.WriteLine("Input price: ");
-                    decimal price = decimal.Parse(Console.ReadLine());
-                    carType.Price = price;
                     Console.WriteLine("Input coef: ");
                     float coef = float.Parse(Console.ReadLine());
                     carType.Coef = coef;
@@ -220,9 +218,7 @@ namespace LogisticService.Menues
                     Console.WriteLine("Input model: ");
                     string model2 = Console.ReadLine();
                     carType.Model = model2;
-                    Console.WriteLine("Input price: ");
-                    decimal price2 = decimal.Parse(Console.ReadLine());
-                    carType.Price = price2;
+                    Console.WriteLine("Input price: ");                   
                     Console.WriteLine("Input coef: ");
                     float coef2 = float.Parse(Console.ReadLine());
                     carType.Coef = coef2;
@@ -233,7 +229,7 @@ namespace LogisticService.Menues
                     Console.WriteLine("Input id: ");
                     int id3 = int.Parse(Console.ReadLine());
                     carTypeRepository.GetById(id3);
-                    Console.WriteLine($"Id: {carType.Id} || Model: {carType.Model} || Price: {carType.Price} || Coef: {carType.Coef}");
+                    Console.WriteLine($"Id: {carType.Id} || Model: {carType.Model} ||Coef: {carType.Coef}");
                     break;
 
                 case 5:
@@ -241,13 +237,13 @@ namespace LogisticService.Menues
 
                     foreach (var item in list)
                     {
-                        Console.WriteLine($"Id: {carType.Id} || Model: {carType.Model} || Price: {carType.Price} || Coef: {carType.Coef}");
+                        Console.WriteLine($"Id: {carType.Id} || Model: {carType.Model} ||  Coef: {carType.Coef}");
                     }
                     break;
             }
         }
 
-        private void ShowCrashedAdminMenu(IRepository<Crashed> crashedRepository)
+        private void ShowCrashedAdminMenu(IRepository<Crashed,CrashedRequest> crashedRepository)
         {
             Console.WriteLine("Wich method do you want to use?");
             Console.WriteLine("1.Add || 2.Delete || 3.Update || 4.GetById || 5.GetAll");

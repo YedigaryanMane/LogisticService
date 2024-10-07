@@ -65,9 +65,9 @@ namespace LogisticService.Repositories
                     {
                         while (reader.Read())
                         {
-                            container.Id = int.Parse(reader["@Id"].ToString());
-                            container.Coef = float.Parse(reader["@Coef"].ToString());
-                            container.IsClosed = bool.Parse(reader["@IsClosed"].ToString());
+                            container.Id = int.Parse(reader["Id"].ToString());
+                            container.Coef = float.Parse(reader["Coef"].ToString());
+                            container.IsClosed = bool.Parse(reader["IsClosed"].ToString());
                         }
                     }
                 }
@@ -120,7 +120,6 @@ namespace LogisticService.Repositories
                     {
                         while (reader.Read())
                         {
-                            com.CommandText = "insert into Container values(@Id,@Coef,@IsClosed)";
                             container.Id = int.Parse(reader["@Id"].ToString());
                             container.Coef = float.Parse(reader["@Coef"].ToString());
                             container.IsClosed = bool.Parse(reader["@IsClosed"].ToString());

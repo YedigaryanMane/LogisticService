@@ -6,7 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LogisticService.Models.RequestModels;
-using ConsoleApp75.Models;
 
 namespace LogisticService.Repositories
 {
@@ -33,7 +32,8 @@ namespace LogisticService.Repositories
         public string CarType { get; set; }
     }
 
-    public class LogisticService : ILogisticSerivce
+   
+    public class LogisticServicee : ILogisticSerivce
     {
         private readonly IRepository<CarType, CarTypeRequest> _carTypeRepository;
         private readonly IRepository<Direction, DirectionRequest> _directionRepository;
@@ -41,7 +41,7 @@ namespace LogisticService.Repositories
         private readonly IRepository<Container, ContainerRequest> _containerRepository;
         private readonly ICalculationService _calculationService;
 
-        public LogisticService(IRepository<CarType, CarTypeRequest> carTypeRepository,
+        public LogisticServicee(IRepository<CarType, CarTypeRequest> carTypeRepository,
             IRepository<Direction, DirectionRequest> directionRepository,
             IRepository<Crashed, CrashedRequest> crashedRepository,
             IRepository<Container, ContainerRequest> containerRepository,
@@ -53,6 +53,7 @@ namespace LogisticService.Repositories
             _containerRepository = containerRepository;
             _calculationService = calculationService;
         }
+        public LogisticServicee() { }
 
         public float GetPrice(LogisticModel logisticModel)
         {

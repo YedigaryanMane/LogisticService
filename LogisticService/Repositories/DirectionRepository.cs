@@ -1,4 +1,5 @@
 ﻿using LogisticService.Models;
+using LogisticService.Models.RequestModels;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LogisticService.Repositories
 {
-    public class DirectionRepository : IRepository<Direction>
+    public class DirectionRepository : IRepository<Direction,DirectionRequest>
     {
         public const string CONNECTION_STRING = "Data Source=.;Initial Catalog = CarsDb; Integrated Security = True; Encrypt=False";
         List<Direction> directions = new List<Direction>();
@@ -22,9 +23,9 @@ namespace LogisticService.Repositories
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = conn;
-                    command.CommandText = "insert into Direction values(@To1 ,@From1,@Price,@Distance )";
-                    command.Parameters.Add(new SqlParameter("@To1", direction.To));
+                    command.CommandText = "insert into Direction values(@From1,@To1,@Price,@Distance )";
                     command.Parameters.Add(new SqlParameter("@From1", direction.From));
+                    command.Parameters.Add(new SqlParameter("@To1", direction.To));
                     command.Parameters.Add(new SqlParameter("@Price", direction.Price));
                     command.Parameters.Add(new SqlParameter("@Distance", direction.Distance));
 
@@ -132,9 +133,37 @@ namespace LogisticService.Repositories
             }
         }
 
-        public Direction Find(Direction t1)
+       
+        public Direction Find(DirectionRequest request)
         {
-            throw new NotImplementedException();
+            using (SqlConnection con = new SqlConnection(CONNECTION_STRING))
+            {
+                con.Open();
+
+                Direction direction = new Direction();
+
+
+                using (SqlCommand command = new SqlCommand())
+                {
+                    command.Connection = con;
+                    command.CommandText = "select * from Direction where From1 = @From1 and To1 = @To1";
+                    command.Parameters.AddWithValue("@From1", request.From1);
+                    command.Parameters.AddWithValue("@To1",request.To1);                                     
+                    
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            direction.Id = int.Parse(reader["Id"].ToString());
+                            direction.From = reader["From1"].ToString();
+                            direction.To = reader["To1"].ToString();
+                            direction.Price = decimal.Parse(reader["Price"].ToString());
+                            direction.Distance = int.Parse(reader["Distance"].ToString());
+                        }
+                    }
+                }
+                return direction;
+            }
         }
     }
 }

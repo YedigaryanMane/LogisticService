@@ -55,7 +55,6 @@
     <Compile Include="Models\Container.cs" />
     <Compile Include="Models\Crashed.cs" />
     <Compile Include="Models\Direction.cs" />
-    <Compile Include="Models\Person.cs" />
     <Compile Include="Menues\AdminMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,8 +68,7 @@
     <Compile Include="Repositories\CrashedRepository.cs" />
     <Compile Include="Repositories\DirectionRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
-    <Compile Include="Repositories\LogisticService.cs" />
-    <Compile Include="Repositories\PersonRepository.cs" />
+    <Compile Include="Repositories\LogisticServicee.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

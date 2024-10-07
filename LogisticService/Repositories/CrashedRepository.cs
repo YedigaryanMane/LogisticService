@@ -1,4 +1,5 @@
 ﻿using LogisticService.Models;
+using LogisticService.Models.RequestModels;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LogisticService.Repositories
 {
-    public class CrashedRepository : IRepository<Crashed>
+    public class CrashedRepository : IRepository<Crashed,CrashedRequest>
     {
 
         public const string CONNECTION_STRING = "Data Source=.;Initial Catalog = CarsDb; Integrated Security = True; Encrypt=False";
@@ -22,7 +23,7 @@ namespace LogisticService.Repositories
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = con;
-                    command.CommandText = "insert onto Crashed vsalues(@Coef,@IsCrashed)";
+                    command.CommandText = "insert into Crashed values(@IsCrashed,@Coef)";
                     command.Parameters.Add(new SqlParameter("@IsCrashed", crashed.IsCrashed));
                     command.Parameters.Add(new SqlParameter("@Coef", crashed.Coef));
 
@@ -48,9 +49,34 @@ namespace LogisticService.Repositories
             }
         }
 
-        public Crashed Find(Crashed t1)
+       
+
+        public Crashed Find(CrashedRequest request)
         {
-            throw new NotImplementedException();
+            using (SqlConnection connection = new SqlConnection(CONNECTION_STRING))
+            {
+                connection.Open();
+                Crashed crashed = new Crashed();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = connection;
+                    cmd.CommandText = "select * from Crashed where IsCrashed = @IsCrashed ";
+                    cmd.Parameters.AddWithValue("@IsCrashed", request.IsCrashed);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                           
+                            crashed.Coef = float.Parse(reader["Coef"].ToString());
+                            crashed.Id = int.Parse(reader["Id"].ToString());
+                            crashed.IsCrashed = bool.Parse(reader["IsCrashed"].ToString());                           
+                        }
+                    }
+                }
+                return crashed;
+            }
+
         }
 
         public List<Crashed> GetAll()

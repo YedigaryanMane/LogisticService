@@ -10,11 +10,11 @@ namespace LogisticService.Models.RequestModels
     {
         public DirectionRequest(string from, string to)
         {
-            From = from;
-            To = to;
+            From1 = from;
+            To1 = to;
         }
 
-        public string From { get; set; }
-        public string To { get; set; }
+        public string From1 { get; set; }
+        public string To1 { get; set; }
     }
 }

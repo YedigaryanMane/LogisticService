@@ -18,37 +18,32 @@ namespace LogisticService
     {
         static void Main(string[] args)
         {
-           
-            
+            Console.WriteLine("Good day, we are glad to see you on our page");
+            Menu menu = null;
+
             while (true)
             {
-                Menu menu = null;
-
-                Console.WriteLine("1. Admin | 2. User | 0. Exit");
+                Console.WriteLine("Dear visitor choose, wich one do you want?");
+                Console.WriteLine("1.Admin || 2.User || 0.Exist");
 
                 int option = int.Parse(Console.ReadLine());
-
-                if (option == 0)
+                switch(option)
                 {
-                    break;
-                }
-
-                switch (option)
-                {
-
-                    case 1:
+                    case 0:
+                        break;
+                        case 1:
                         menu = new AdminMenu();
                         break;
-                    case 2:
+                        case 2:
                         menu = new UserMenu();
                         break;
                     default:
-                        Console.WriteLine("Incorect option. Try again.");
+                        Console.WriteLine("Option is incorrect.");
                         break;
                 }
-
                 menu.Start();
             }
+
         }
     }
 }

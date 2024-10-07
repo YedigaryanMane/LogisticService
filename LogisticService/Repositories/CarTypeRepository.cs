@@ -1,4 +1,5 @@
 ﻿using LogisticService.Models;
+using LogisticService.Models.RequestModels;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LogisticService.Repositories
 {
-    public class CarTypeRepository : IRepository<CarType>
+    public class CarTypeRepository : IRepository<CarType,CarTypeRequest>
     {
         public const string CONNECTION_STRING = "Data Source=.;Initial Catalog = CarsDb; Integrated Security = True; Encrypt=False";
         List<CarType> carTypes = new List<CarType>();
@@ -22,9 +23,8 @@ namespace LogisticService.Repositories
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = con;
-                    command.CommandText = "insert into CarType values(@Model,@Price,@Coef)";
+                    command.CommandText = "insert into CarType values(@Model,@Coef)";
                     command.Parameters.Add(new SqlParameter("@Model", carType.Model));
-                    command.Parameters.Add(new SqlParameter("@Price", carType.Price));
                     command.Parameters.Add(new SqlParameter("@Coef", carType.Coef));
 
                     command.ExecuteNonQuery();
@@ -49,9 +49,33 @@ namespace LogisticService.Repositories
             }
         }
 
-        public CarType Find<TRequest>(TRequest request)
+
+        public CarType Find(CarTypeRequest request)
         {
-            throw new NotImplementedException();
+            using (SqlConnection connection = new SqlConnection(CONNECTION_STRING))
+            {
+                connection.Open();
+                CarType car = new CarType();
+
+
+                using (SqlCommand sqlCommand = new SqlCommand())
+                {
+                    sqlCommand.Connection = connection;
+                    sqlCommand.CommandText = "select * from CarType where Model = @Model";
+                    sqlCommand.Parameters.AddWithValue("@Model", request.Type);
+
+                    using (SqlDataReader reader = sqlCommand.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            car.Id = int.Parse(reader["Id"].ToString());
+                            car.Model = reader["Model"].ToString();
+                            car.Coef = float.Parse(reader["Coef"].ToString());
+                        }
+                    }
+                }
+                return car;
+            }
         }
 
         public List<CarType> GetAll()
@@ -71,9 +95,9 @@ namespace LogisticService.Repositories
                         while (reader.Read())
                         {
                             CarType car = new CarType();
-                            car.Id = int.Parse(reader["@Id"].ToString());
-                            car.Model = reader["@Model"].ToString();
-                            car.Coef = float.Parse(reader["@Coef"].ToString());
+                            car.Id = int.Parse(reader["Id"].ToString());
+                            car.Model = reader["Model"].ToString();
+                            car.Coef = float.Parse(reader["Coef"].ToString());
                             cars.Add(car);
                         }
                     }
@@ -97,9 +121,9 @@ namespace LogisticService.Repositories
                     {
                         while (reader.Read())
                         {
-                            car.Id = int.Parse(reader["@Id"].ToString());
-                            car.Model = reader["@Model"].ToString();
-                            car.Coef = float.Parse(reader["@Coef"].ToString());
+                            car.Id = int.Parse(reader["Id"].ToString());
+                            car.Model = reader["Model"].ToString();
+                            car.Coef = float.Parse(reader["Coef"].ToString());
                         }
                     }
                 }

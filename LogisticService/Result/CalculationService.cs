@@ -1,5 +1,4 @@
-﻿using ConsoleApp75.Models;
-using LogisticService.Models;
+﻿using LogisticService.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -2,97 +2,75 @@
 using System.Collections.Generic;
 using LogisticService.Repositories;
 using LogisticService.Models;
+using LogisticService.Models.RequestModels;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LogisticService.Result;
 
 namespace LogisticService.Menues
 {
-    public class UserMenu : Menu
+    public class UserMenu :Menu
     {
+        public CarTypeRequest GetingCarType()
+        {
+            Console.WriteLine("Write car type: ");
+            string type = Console.ReadLine();
+            CarTypeRequest carTypeRequest = new CarTypeRequest(type);
+
+            return carTypeRequest;
+        }
+
+        public ContainerRequest GetingContainer()
+        {
+            Console.WriteLine("How do you want to open or close container?");
+            bool isClosed = bool.Parse(Console.ReadLine());
+            ContainerRequest containerRequest = new ContainerRequest(isClosed);
+
+            return containerRequest;
+        }
+
+        public CrashedRequest GetingCrashed()
+        {
+            Console.WriteLine("Is your car crashed?");
+            bool isCrashed = bool.Parse(Console.ReadLine());
+            CrashedRequest crashedRequest = new CrashedRequest(isCrashed);
+
+            return crashedRequest;
+        }
+
+        public DirectionRequest GetingDirection()
+        {
+            Console.WriteLine("From where do you want to bring your car?");
+            string from = Console.ReadLine();
+            Console.WriteLine("Where do you want take the car?");
+            string to = Console.ReadLine();
+            DirectionRequest directionRequest = new DirectionRequest(from, to);
+
+            return directionRequest;
+        }
+
         public override void Start()
         {
-            Console.WriteLine("Wich method do you want to use?");
-            Console.WriteLine("1.Add || 2.Delete || 3.Update || 4.GetById || 5.GetAll");
-            PersonRepository personRepository = new PersonRepository();
-            Person person = new Person();
-            int n;
-            string optionStr = Console.ReadLine();
+            CarTypeRequest carTypeRequest = GetingCarType();
+            CrashedRequest crashedRequest = GetingCrashed();
+            ContainerRequest containerRequest = GetingContainer();
+            DirectionRequest dirRequest = GetingDirection();
+            ICalculationService calculationService = new CalculationService();
+            IRepository<CarType, CarTypeRequest> repository = new CarTypeRepository();
+            IRepository<Direction,DirectionRequest> repository1 = new DirectionRepository();
+            IRepository<Crashed,CrashedRequest> repository2 = new CrashedRepository();
+            IRepository<Container,ContainerRequest> repository3 = new ContainerRepository();
 
-            if (string.IsNullOrWhiteSpace(optionStr))
-            {
-                Console.WriteLine("Incorect option");
-                return;
-            }
+            CarType s = repository.Find(carTypeRequest);
+            Direction d = repository1.Find(dirRequest);
+            Crashed c = repository2.Find(crashedRequest);
+            Container cc = repository3.Find(containerRequest);
 
-            if (!int.TryParse(optionStr, out n))
-            {
-                Console.WriteLine("Incorect option");
-                return;
-            }
-
-            if (n == 0)
-            {
-                Console.WriteLine("You go out");
-                return;
-            }
-
-            switch (n)
-            {
-                case 1:
-                    Console.WriteLine("Input id: ");
-                    int id = int.Parse(Console.ReadLine());
-                    person.Id = id;
-                    Console.WriteLine("Input emaill: ");
-                    string email = Console.ReadLine();
-                    person.Email = email;
-                    Console.WriteLine("Input PhoneNumber: ");
-                    string phoneNumber = Console.ReadLine();
-                    person.PhoneNumber = phoneNumber;
-                    Console.WriteLine("Input leadTime: ");
-                    string leadTime = Console.ReadLine();
-                    person.ԼeadTime = leadTime;
-                    personRepository.Add(person);
-                    break;
-
-                case 2:
-                    Console.WriteLine("Input id: ");
-                    int id1 = int.Parse(Console.ReadLine());
-                    personRepository.Delete(id1);
-                    break;
-
-                case 3:
-                    Console.WriteLine("Input id: ");
-                    int id2 = int.Parse(Console.ReadLine());
-                    person.Id = id2;
-                    Console.WriteLine("Input emaill: ");
-                    string email2 = Console.ReadLine();
-                    person.Email = email2;
-                    Console.WriteLine("Input PhoneNumber: ");
-                    string phoneNumber2 = Console.ReadLine();
-                    person.PhoneNumber = phoneNumber2;
-                    Console.WriteLine("Input leadTime: ");
-                    string leadTime2 = Console.ReadLine();
-                    person.ԼeadTime = leadTime2;
-                    personRepository.Update(person);
-                    break;
-
-                case 4:
-                    Console.WriteLine("Input id: ");
-                    int id3 = int.Parse(Console.ReadLine());
-                    personRepository.GetById(id3);
-                    Console.WriteLine($"Id: {person.Id} || Email: {person.Email} || LeadTime: {person.ԼeadTime} || PhoneNumber: {person.PhoneNumber}");
-                    break;
-
-                case 5:
-                    List<Person> list = personRepository.GetAll();
-
-                    foreach (var item in list)
-                    {
-                        Console.WriteLine($"Id: {person.Id} || Email: {person.Email} || LeadTime: {person.ԼeadTime} || PhoneNumber: {person.PhoneNumber}");
-                    }
-                    break;
-            }
+            float result = calculationService.Calculate(new CalculationModel(s, d, cc, c));
+            Console.WriteLine();
+            Console.WriteLine($"Result:{result}");
         }
+        
     }
 }
