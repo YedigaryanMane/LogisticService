@@ -1,21 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using LogisticService.Repositories;
-using LogisticService.Models;
+﻿using LogisticService.Models;
 using LogisticService.Models.RequestModels;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using LogisticService.Result;
+using LogisticService.Repositories;
+using LogisticService.Services;
+using LogisticService.Services.Models;
+using System;
 
 namespace LogisticService.Menues
 {
-    public class UserMenu :Menu
+    public class UserMenu : Menu
     {
         public CarTypeRequest GetingCarType()
         {
             Console.WriteLine("Write car type: ");
+
             string type = Console.ReadLine();
+
             CarTypeRequest carTypeRequest = new CarTypeRequest(type);
 
             return carTypeRequest;
@@ -24,7 +23,9 @@ namespace LogisticService.Menues
         public ContainerRequest GetingContainer()
         {
             Console.WriteLine("How do you want to open or close container?");
+
             bool isClosed = bool.Parse(Console.ReadLine());
+
             ContainerRequest containerRequest = new ContainerRequest(isClosed);
 
             return containerRequest;
@@ -33,7 +34,9 @@ namespace LogisticService.Menues
         public CrashedRequest GetingCrashed()
         {
             Console.WriteLine("Is your car crashed?");
+
             bool isCrashed = bool.Parse(Console.ReadLine());
+
             CrashedRequest crashedRequest = new CrashedRequest(isCrashed);
 
             return crashedRequest;
@@ -42,9 +45,13 @@ namespace LogisticService.Menues
         public DirectionRequest GetingDirection()
         {
             Console.WriteLine("From where do you want to bring your car?");
+
             string from = Console.ReadLine();
+
             Console.WriteLine("Where do you want take the car?");
+
             string to = Console.ReadLine();
+
             DirectionRequest directionRequest = new DirectionRequest(from, to);
 
             return directionRequest;
@@ -56,21 +63,28 @@ namespace LogisticService.Menues
             CrashedRequest crashedRequest = GetingCrashed();
             ContainerRequest containerRequest = GetingContainer();
             DirectionRequest dirRequest = GetingDirection();
+
             ICalculationService calculationService = new CalculationService();
             IRepository<CarType, CarTypeRequest> repository = new CarTypeRepository();
-            IRepository<Direction,DirectionRequest> repository1 = new DirectionRepository();
-            IRepository<Crashed,CrashedRequest> repository2 = new CrashedRepository();
-            IRepository<Container,ContainerRequest> repository3 = new ContainerRepository();
+            IRepository<Direction, DirectionRequest> repository1 = new DirectionRepository();
+            IRepository<Crashed, CrashedRequest> repository2 = new CrashedRepository();
+            IRepository<Container, ContainerRequest> repository3 = new ContainerRepository();
 
-            CarType s = repository.Find(carTypeRequest);
-            Direction d = repository1.Find(dirRequest);
-            Crashed c = repository2.Find(crashedRequest);
-            Container cc = repository3.Find(containerRequest);
+            CarType carType = repository.Find(carTypeRequest);
+            Direction direction = repository1.Find(dirRequest);
+            Container container = repository3.Find(containerRequest);
+            Crashed crashed = repository2.Find(crashedRequest);
 
-            float result = calculationService.Calculate(new CalculationModel(s, d, cc, c));
-            Console.WriteLine();
-            Console.WriteLine($"Result:{result}");
+            float result = calculationService.Calculate(new CalculationModel(carType, direction, container, crashed));
+
+            if (result > 0)
+            {
+                Console.WriteLine($"Result:{result}");
+            }
+            else
+            {
+                Console.WriteLine("Data does not satisfy");
+            }
         }
-        
     }
 }

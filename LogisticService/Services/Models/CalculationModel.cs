@@ -1,11 +1,6 @@
 ﻿using LogisticService.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace LogisticService.Models
+namespace LogisticService.Services.Models
 {
     public class CalculationModel
     {

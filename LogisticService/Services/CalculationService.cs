@@ -1,17 +1,7 @@
-﻿using LogisticService.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LogisticService.Services.Models;
 
-namespace LogisticService.Result
+namespace LogisticService.Services
 {
-    public interface ICalculationService
-    {
-        float Calculate(CalculationModel calculationModel);
-    }
-
     public class CalculationService : ICalculationService
     {
         public float Calculate(CalculationModel calculationModel)

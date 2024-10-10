@@ -1,38 +1,10 @@
-﻿using LogisticService.Result;
-using LogisticService.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LogisticService.Models;
 using LogisticService.Models.RequestModels;
+using LogisticService.Repositories;
+using LogisticService.Services.Models;
 
-namespace LogisticService.Repositories
+namespace LogisticService.Services
 {
-    public interface ILogisticSerivce
-    {
-        float GetPrice(LogisticModel logisticModel);
-    }
-
-    public class LogisticModel
-    {
-        public LogisticModel(string from, string to, bool isClosed, bool isCrushed, string carType)
-        {
-            From = from;
-            To = to;
-            IsClosed = isClosed;
-            IsCrushed = isCrushed;
-            CarType = carType;
-        }
-
-        public string From { get; set; }
-        public string To { get; set; }
-        public bool IsClosed { get; set; }
-        public bool IsCrushed { get; set; }
-        public string CarType { get; set; }
-    }
-
-   
     public class LogisticServicee : ILogisticSerivce
     {
         private readonly IRepository<CarType, CarTypeRequest> _carTypeRepository;
@@ -53,6 +25,7 @@ namespace LogisticService.Repositories
             _containerRepository = containerRepository;
             _calculationService = calculationService;
         }
+
         public LogisticServicee() { }
 
         public float GetPrice(LogisticModel logisticModel)
